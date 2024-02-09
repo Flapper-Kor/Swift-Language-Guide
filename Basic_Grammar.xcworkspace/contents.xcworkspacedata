@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <Group
+      location = "container:"
+      name = "Playgrounds">
+      <FileRef
+         location = "group:README.md">
+      </FileRef>
+      <FileRef
+         location = "group:&#x1100;&#x116e;&#x110c;&#x1169;&#x110e;&#x1166;&#x110b;&#x116a; &#x110f;&#x1173;&#x11af;&#x1105;&#x1162;&#x1109;&#x1173; - &#x110c;&#x1165;&#x11bc;&#x1105;&#x1175; &#x1111;&#x1175;&#x11af;&#x110b;&#x116d;.playground">
+      </FileRef>
+      <FileRef
+         location = "group:Basic facam - &#x110c;&#x1165;&#x11bc;&#x1105;&#x1175; &#x1111;&#x1175;&#x11af;&#x110b;&#x116d;&apos;.playground">
+      </FileRef>
+      <FileRef
+         location = "group:CH.-- Comment.playground">
+      </FileRef>
+      <FileRef
+         location = "group:CH.01 Basics.playground">
+      </FileRef>
+      <FileRef
+         location = "group:CH.02 Operators.playground">
+      </FileRef>
+      <FileRef
+         location = "group:CH.03 String &amp; Characters.playground">
+      </FileRef>
+      <FileRef
+         location = "group:CH.04 Collection Types.playground">
+      </FileRef>
+      <FileRef
+         location = "group:CH.05 Control Flow.playground">
+      </FileRef>
+      <FileRef
+         location = "group:CH.06 Functions.playground">
+      </FileRef>
+      <FileRef
+         location = "group:CH.07 Closures.playground">
+      </FileRef>
+      <FileRef
+         location = "group:CH.08 Enumerations.playground">
+      </FileRef>
+      <FileRef
+         location = "group:CH.09 Structures and Classes.playground">
+      </FileRef>
+      <FileRef
+         location = "group:CH.10 Properties.playground">
+      </FileRef>
+      <FileRef
+         location = "group:CH.11 Methods.playground">
+      </FileRef>
+      <FileRef
+         location = "group:CH.12 Subscripts.playground">
+      </FileRef>
+      <FileRef
+         location = "group:CH.13 Inheritance.playground">
+      </FileRef>
+      <FileRef
+         location = "group:CH.14 Initialization.playground">
+      </FileRef>
+      <FileRef
+         location = "group:CH.15 Deinitialization.playground">
+      </FileRef>
+      <FileRef
+         location = "group:CH.16 Optional Chaining.playground">
+      </FileRef>
+      <FileRef
+         location = "group:CH.17 Error Handling.playground">
+      </FileRef>
+      <FileRef
+         location = "group:CH.18 Concurrency.playground">
+      </FileRef>
+      <FileRef
+         location = "group:CH.19 Macros.playground">
+      </FileRef>
+      <FileRef
+         location = "group:CH.20 Type Casting.playground">
+      </FileRef>
+      <FileRef
+         location = "group:CH.21 Nested Types.playground">
+      </FileRef>
+      <FileRef
+         location = "group:CH.22 Extentions.playground">
+      </FileRef>
+      <FileRef
+         location = "group:CH.23 Protocols.playground">
+      </FileRef>
+      <FileRef
+         location = "group:CH.24 Generics.playground">
+      </FileRef>
+      <FileRef
+         location = "group:CH.25 Automatic Reference Counting.playground">
+      </FileRef>
+      <FileRef
+         location = "group:CH.26 Memory Safety.playground">
+      </FileRef>
+      <FileRef
+         location = "group:CH.27 Access Control.playground">
+      </FileRef>
+      <FileRef
+         location = "group:CH.28 Advanced Operation.playground">
+      </FileRef>
+      <FileRef
+         location = "group:HighOrderFunction - &#x110c;&#x1165;&#x11bc;&#x1105;&#x1175;&#x1111;&#x1175;&#x11af;&#x110b;&#x116d;.playground">
+      </FileRef>
+      <FileRef
+         location = "group:Protocol - &#x110c;&#x1165;&#x11bc;&#x1105;&#x1175; &#x1111;&#x1175;&#x11af;&#x110b;&#x116d;.playground">
+      </FileRef>
+      <FileRef
+         location = "group:Simple TEST.playground">
+      </FileRef>
+   </Group>
+</Workspace>
