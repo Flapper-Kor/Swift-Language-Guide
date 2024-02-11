@@ -241,13 +241,20 @@ print(ex4.CLOUD.rawValue)
 
 print(type(of: ex4.CLOUD.rawValue))
 
-// enum의 Type을 지정하여 사용하고자 할 때는
+// enum의 Typed 이름을 추가 사용하고자 할 때는
 // 아래와 같이 typealias를 사용하여 정의한다.
 typealias BGImage = ex4
 
-//하지만 굳이 typealias를 하지 않더라도 enum의 이름으로 type이 define되어 있다.
-var x : ex4?
-print(ex3.DEFAULT is ex4)
+
+// 하지만 굳이 typealias를 하지 않더라도 enum의 이름으로 type이 define되어 있다.
+// enum 도 Type 이다.
+var ex4_x : ex4?
+var ex4_y : ex4 = .DEFAULT
+print(ex4_x as Any) // nil - optional default
+
+print(ex3.DEFAULT is ex4) // false
+print(ex3.CLOUD is ex3) // true
+print(ex4_y.rawValue is Float) // true
 
 
 // 열거형 값의 자동대입 (아래와 같은 용법으로 여타 언어에서의 자동증가값 대입을 사용가능

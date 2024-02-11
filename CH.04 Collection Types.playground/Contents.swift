@@ -1,19 +1,21 @@
+// MARK: Collection Types
+
 /*
- Collection Types
+ 기본적으로 제공되는 세가지 콜렉션 타입이 있으며, 아래와 같은 특징
+ 배열 : Array      - 배열과 같이 사용할 수 있으며, 리스트, 어레이리스트, 큐, 스택 등의 요구되는 기능들을 모두 포함한다.
+ 집합 : Set        - hashable 한 값을 저장. 중복이 허용되지 않고, 순서가 없는 자료형. 말그대로 집합
+ 사전 : Dictionary - 키밸류로 이뤄진 맵, 해쉬테이블과 형태가 같은 콜렉션. 순서가 없는 자료형. set과 마찬가지로 key 값은 hashable value여야 함
+
+ 세가지 모두 제네릭 컬렉션으로 정의되어 있고,
+ 한번 타입이 지정되면(명시적이건, 추론적이건) 변경할 수 없다.
+
+ 상수에 할당하면 해당 컬렉션은 변경 불가.
+ 이러한 사용은 코드에 대해 추론이 쉽고 컴파일러가 성능을 최적화 할 수 있다고 함.
+ 따라서 상수로 선언해도 되는 컬렉션은 가능하면 상수로 선언
  */
 
-// 기본적으로 제공되는 세가지 콜렉션 타입이 있으며, 아래와 같은 특징
-// 배열 : Array      - 배열과 같이 사용할 수 있으며, 리스트, 어레이리스트, 큐, 스택 등의 요구되는 기능들을 모두 포함한다.
-// 집합 : Set        - hashable 한 값을 저장. 중복이 허용되지 않고, 순서가 없는 자료형. 말그대로 집합
-// 사전 : Dictionary - 키밸류로 이뤄진 맵, 해쉬테이블과 형태가 같은 콜렉션. 순서가 없는 자료형. set과 마찬가지로 key 값은 hashable value여야 함
 
-// 세가지 모두 제네릭 컬렉션으로 정의되어 있고,
-// 한번 타입이 지정되면(명시적이건, 추론적이건) 변경할 수 없다.
-
-// 상수에 할당하면 해당 컬렉션은 변경 불가.
-// 이러한 사용은 코드에 대해 추론이 쉽고 컴파일러가 성능을 최적화 할 수 있다고 함.
-// 따라서 상수로 선언해도 되는 컬렉션은 가능하면 상수로 선언
-
+//MARK: - Array
 
 // Declaration
 var arr1 : Array<Int>
@@ -156,9 +158,8 @@ let powder = shoppingList.first { string in
 }
 
 
-/*
- Sets
- */
+// MARK: - SET
+
 //A set stores distinct values of the same type in a collection with no defined ordering. You can use a set instead of an array when the order of items isn’t important, or when you need to ensure that an item only appears once.
 
 // 집합의 기본은 중복허용하지 않으며(hashable for this), 순서가 없다는 것이다.
@@ -303,9 +304,7 @@ inner1.isSubset(of: outer1)     // 서브셋인가 (포함관계인가? 하위�
 inner1.isDisjoint(with: outer2) // 분리되어 있는가? (교집합이 0인가)
 
 
-/*
- Dictionaries
- */
+//MARK: - Dictionary
 
 // Declaration
 var dict1 : Dictionary<String, Int>
