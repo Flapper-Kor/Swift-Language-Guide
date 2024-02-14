@@ -2,9 +2,15 @@
  Structures and Classes
  
  스위프트에서는 개개의 클래스마다 별도의 파일을 만들 필요가 없다.
- 단일 파일에서 구조체와 클래슬를 선언/정의 하고, 사용할 수 있다.
+ 단일 파일에서 구조체와 클래스를 선언/정의 하고, 사용할 수 있다.
  
  클래스의 인스턴스를 호칭할 때, 오브젝트(object)라는 표현 대신, 스위프트에서는 보다 일반적인 instance(인스턴스)라는 표현의 사용을 지향한다.
+ 
+ 생성 하지 않아도 사용할 수 있는 구조체변수(in C/Cpp) 처럼 동작, 스택 영역에 값이 저장되어 있음 (값 타입)
+ 구조체를 사용할 때 주의할 점 : 인스턴스 생성 형태의 구문을 사용해야 한다는 것이다. (선언만으로 사용 불가)
+ 
+ 반면 클래스는 보통의 클래스와 동일하고 소멸자(deinit)를 가질 수 있고, ARC(Automatic Reference Counting)로 메모리를 관리한다.
+ GC 와의 차이점 : ARC는 컴파일 타임에 적절하게 해제시점을 정의. 레퍼런스 감소 코드를 삽입하여 줌. GC는 런타임 메모리 관리 기법
  */
 
 // MARK: - Comparing Structures and Classes
@@ -56,6 +62,7 @@ struct Resolution {
     var width = 0
     var height = 0
 }
+
 class VideoMode {
     var resolution = Resolution()
     var interlaced = false

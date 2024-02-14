@@ -294,7 +294,7 @@ print(newString, type(of: newString))
 // which means it’s often convenient for string-manipulation functions to accept a StringProtocol value.
 // You can call such functions with either a String or Substring value.
 
-// 둘다 스트릴 프로토콜을 준수하므로 이 프로토콜을 허용하는 함수내에서 비교 없이 사용가능하다고 한다.
+// 둘다 스트링 프로토콜을 준수하므로 이 프로토콜을 허용하는 함수내에서 비교 없이 사용가능하다고 한다.
 // 하지만 다른 타입이기 때문에 주의해서 사용해야 할듯.
 
 // 스트링 연산을 하는 경우 앞선 것의 타입에 따라간다.
@@ -307,6 +307,13 @@ print(combined2, type(of: combined2))
 
 // 컴파일러가 이상한 부분을 감지해서 알아서 알려줘서 크게 문제될 것은 없을 듯...;;;
 if(combined1 is String){ //Cast from 'String.SubSequence' (aka 'Substring') to unrelated type 'String' always fails
+    print("응스트링이야") // Will never be executed
+    
+}else{
+    print("응아니야")
+}
+
+if(String(combined1) is String){ //Cast from 'String.SubSequence' (aka 'Substring') to unrelated type 'String' always fails
     print("응스트링이야") // Will never be executed
     
 }else{

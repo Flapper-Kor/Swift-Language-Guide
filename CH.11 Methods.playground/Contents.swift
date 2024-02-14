@@ -71,8 +71,7 @@ if somePoint.isToTheRightOf(x: 1.0) {
  *중요*
  
  Without the self prefix, Swift would assume that both uses of x referred to the method parameter called x.
- 
- mutating 이건 클래스로 정의하건, 지역변수(매개변수) 명과 속성명이 동일하다면, 지역변수(매개변수) 라고 가정한다.
+ self 키워드를 붙이지 않으면, 지역변수(매개변수)명과 속성명이 동일하다면, 지역변수(매개변수) 라고 가정한다.
  */
 struct Point_ {
     var x = 0.0, y = 0.0
@@ -99,7 +98,6 @@ if somePoint_.isToTheRightOf(x: 1.0) {
 
 // 기본적으로 밸류타입 인스턴스의 속성을 인스턴스 매서드 내에서 변경할 수 없지만, mutating 키워드를 사용하여 값을 변경할 수 있다.
 // 상수로 선언된 값타입 인스턴스는 mutating 함수를 호출할 수 없다.
-
 
 extension Point {
     mutating func moveBy(x deltaX: Double, y deltaY: Double) {
@@ -134,9 +132,6 @@ extension Point {
     }
 }
 //The end result of calling this alternative version of the method will be exactly the same as for calling the earlier version.
-// 이전 버전의 것과 정확히 일치한다는데....
-// 그럼
-
 
 enum TriStateSwitch {
     case off, low, high

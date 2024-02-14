@@ -298,9 +298,38 @@ let turnipsAreDelicious = false
  10. Tuple
  */
 
-// 여러개의 값의 나열
-// 특징 : 개수는 상관이 없다. 인덱스를 가지고 있다. 레이블링 가능하다. 레이블로 접근이 가능하다(like dictionary, map)
-// 튜플은 반환값의 유형으로 지정하여 사용하면 상당히 유용하다.
+/*
+ 여러개의 값의 나열
+ 특징
+    개수는 상관이 없다.
+    인덱스를 가지고 있다.
+    튜플내의 값들은 모든 유형이 가능하고, 꼭 같은 유형일 필요가 없다.
+    튜플은 반환값의 유형으로 지정하여 사용하면 상당히 유용하다.
+    레이블링 가능하다.
+    레이블로 접근이 가능하다(like dictionary, map)
+    레이블이 지정되어 있는 튜플이라도 기본적으로 인덱스 접근은 가능
+    레이블링은 부분적으로 적용가능
+    레이블링은 선언에서 할 수도 있고, 생성 시점에 할 수도 있다. (단, 선언된 레이블은 사용도중 변경불가)
+ 
+    일반적인 다른 언어에서의 튜플과 달리 컬렉션 타입이 아니다.
+ */
+
+// usage tuple
+var sometuple = (12, 3)
+print(type(of: sometuple), sometuple.0, sometuple.1)
+
+// tuple labeling (아래처럼 가능)
+var sometuple1 = (name:"steve", 3)
+var sometuple2 : (name : String, Int) = ("steve", 3)
+var sometuple3 : (String, Int) = (name: "steve", 3)
+var sometuple4 : (name : String, Int) = (name: "steve", 3) // 이미 선언된 레이블 사용도중 변경불가
+//var sometuple4 : (name : String, Int) = (key: "steve", 3) // 이미 선언된 레이블 사용도중 변경불가
+
+// 값의 확인
+print(type(of: sometuple1), type(of: sometuple2), type(of: sometuple3))
+print(sometuple1, sometuple2, sometuple3)
+
+
 let http404Error = (404, "Not Found", 1231233444)
 // http404Error is of type (Int, String), and equals (404, "Not Found")
 print(http404Error, type(of: http404Error))
@@ -357,10 +386,21 @@ print(serverResponseCode as Any, type(of: serverResponseCode))
 /*
  12. nil
  */
+/*
+ nil 은 값의 부재를 나타내는 키워드로 기본적으로 String 클래스가 nullable인
+ 여타 언어에서와 달리 옵셔널이 아닌 개체는 값의 부재를 표현할 수 없다.
+ 
+ ObjectC 에서 포인터에 대한 값의 부재를 Null로 표시하였고, 값의 부재에 대한 표현으로 nil을 사용하였는데 스위프트로 넘어오면서 포인터가 사라지고 nil이라는 표현만 남게 됨.
+ null : objectC 랭귀지에서 포인터에 대한 값의 부재
+ nil  : 특정 타입에 대한 값의 부재
+ 
+ 여타 객체지향 언어에서의 참조변수의 null, none등과는 조금 다른 개념
+ 
+ None, Null 은 존재의 부재, nil 은 값의 부재...라고 이해하면 되겠으나....
+ 
+ 의미가 퇴색된듯....그냥 모두 같다고 보면 될듯
+ */
 
-// nil 은 값의 부재를 나타내는 키워드로 기본적으로 String 클래스가 nullable인
-// 여타 언어에서와 달리 옵셔널이 아닌 개체는 값의 부재를 표현할 수 없다.
-//var sssk : String? = nil  // 옵셔널을 지정해야 nil을 사용가능
 var sssk : String? = "sdfsdfsdf"
 
 

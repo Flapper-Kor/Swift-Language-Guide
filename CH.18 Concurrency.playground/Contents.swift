@@ -1,7 +1,7 @@
 /*
  Concurrency
  
- Perform asynchronous operations. (비동기 동작을 수행하세요.)
+ Perform asynchronous operations.
  */
 
 import Foundation
