@@ -23,7 +23,7 @@ xcode 처음 사용 시 참고할 사항
 
 단축키 정리
 1. 서제스트 활성화 : (cmd + .), (option + esc)
-2. 퀵 헬프 : 커서를 도움말 보고 싶은 키워드에 위치 (cmd + control + ?)
+2. 퀵 헬프 : 커서를 도움말 보고 싶은 키워드에 위치 (cmd + control + ?) (cmd + control + shift + /)
 3. 글씨 확대/축소 : (cmd + =/-)
 4. 플레이그라운드 실행 : (cmd + shift + enter)
   

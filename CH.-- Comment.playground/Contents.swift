@@ -429,7 +429,7 @@ class QuickHelpCommentGuide{
 }
 
 
-
+QuickHelpCommentGuide().QickHelpCommentGuide()
 
 
 
